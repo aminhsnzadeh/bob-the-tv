@@ -4,7 +4,7 @@ A stylized 3D character built with Blender and brought to life in React Three Fi
 
 
 <p align="center">
-  <img src="https://img.shields.io/badge/React-18.0-blue" />
+  <img src="https://img.shields.io/badge/React-19.1-blue" />
   <img src="https://img.shields.io/badge/Three.js-WebGL-black" />
   <img src="https://img.shields.io/badge/Blender-4.1-orange" />
   <img src="https://img.shields.io/badge/Architecture-Clean-green" />
