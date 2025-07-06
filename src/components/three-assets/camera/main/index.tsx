@@ -5,7 +5,6 @@ export default function MainCamera() {
 
     const camRef = useRef(null)
 
-    // an example to toggling the focus mode. On render click on red cube to see it
     return (
         <>
             <PerspectiveCamera

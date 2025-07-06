@@ -21,10 +21,12 @@ export default function Bob({ position = [0, 0, 0] }: Props) {
         }
 
         scene.traverse((obj) => {
-            console.log(obj.name)
             if (obj.isObject3D) {
+                console.log(obj.name)
+                if(obj.name != "tv" && obj.name != "Cube001" && obj.name != "Cube002" && obj.name != "Cube002_1") {
+                    obj.receiveShadow = true;
+                }
                 obj.castShadow = true;
-                obj.receiveShadow = true;
             }
         });
         const monitorMesh = scene.getObjectByName('screen') as THREE.Mesh;
@@ -43,10 +45,10 @@ export default function Bob({ position = [0, 0, 0] }: Props) {
             const material = monitorMesh.material as MeshStandardMaterial;
             material.map = videoTexture;
 
-            // Optional: make it glow a bit
             material.transparent = true;
             material.opacity = 1;
             material.alphaTest = 1;
+            // Optional: make it glow a bit
             material.emissive = new THREE.Color(0x629277);
             material.emissiveMap = videoTexture;
             material.emissiveIntensity = 0.3;
