@@ -1,18 +1,18 @@
 import {Canvas} from "@react-three/fiber";
 import {MainCamera} from "../../components/three-assets/camera";
-import {Torus} from "../../components/three-assets/objects";
 import MainLight from "../../components/three-assets/lights/main";
-import {OrbitControls} from "@react-three/drei";
+import Bob from "../../components/three-assets/objects/bob";
+import PointLights from "../../components/three-assets/lights/points";
 
 export default function Scene() {
 
     return (
         <>
-            <Canvas shadows >
+            <Canvas shadows  >
                 <MainCamera />
                 <MainLight />
-                <Torus position={[0, 0, 0]} color={'red'} />
-                <OrbitControls />
+                <Bob position={[0, 0, 0]} />
+                <PointLights />
             </Canvas>
 
         </>

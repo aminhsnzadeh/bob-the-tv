@@ -10,9 +10,9 @@ export default function MainCamera() {
         <>
             <PerspectiveCamera
                 ref={camRef}
-                makeDefault
-                position={[0, 0, 5]}
-                fov={60}
+                makeDefault position={[-8, 3, 12]}
+                rotation={[0, -(Math.PI / 3), 0]}
+                fov={50}
             />
         </>
     )
