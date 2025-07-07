@@ -22,7 +22,6 @@ export default function Bob({ position = [0, 0, 0] }: Props) {
 
         scene.traverse((obj) => {
             if (obj.isObject3D) {
-                console.log(obj.name)
                 if(obj.name != "tv" && obj.name != "Cube001" && obj.name != "Cube002" && obj.name != "Cube002_1") {
                     obj.receiveShadow = true;
                 }
