@@ -1,1 +1,1 @@
-export { default as Torus } from "./test/torus.tsx"
+export { default as Torus } from "./test/torus"
