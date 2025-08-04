@@ -15,8 +15,7 @@ A stylized 3D character built with Blender and brought to life in React Three Fi
 
 ## 🚀 Live Demo
 
-Comming soon !
-Keep in touch for live demo !
+[Say hello to bob 📺](https://bob-the-tv-lihd.vercel.app/)
 
 ---
 
